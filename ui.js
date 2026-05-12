@@ -163,4 +163,7 @@ export function applyConfig(cfg) {
 
   const panelTitle = document.getElementById('panel-title');
   if (panelTitle) panelTitle.textContent = cfg.name;
+
+  const authorEl = document.getElementById('author');
+  if (authorEl && cfg.author) authorEl.textContent = cfg.author;
 }
