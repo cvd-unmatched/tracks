@@ -17,7 +17,7 @@
   <p id="big-subtitle"></p>
   <p class="draw-hint">Click to place waypoints around the track centerline<br>
   Click near the <span class="key">first point</span> to close the loop<br>
-  Press <span class="key">Ctrl+Z</span> to undo &middot; Or load a preset</p>
+  <span class="key">Ctrl+Z</span> undo &middot; <span class="key">Ctrl+drag</span> move point &middot; Or load a preset</p>
 </div>
 
 <div id="panel">
@@ -32,7 +32,8 @@
     <b>Fitness</b> = checkpoints passed by the best car. ~60 = one full lap.<br>
     <b>Generation</b> ends when all cars crash or stall. Best brains are bred &amp; mutated into the next batch. No car survives, only neural net weights carry over.<br>
     <b>Mutation</b> = chance that each brain weight changes between generations. Low = fine-tuning, high = wild experiments.<br>
-    <b>Gen time</b> = max ticks per generation. Increase for longer/harder tracks.
+    <b>Gen time</b> = max ticks per generation. Increase for longer/harder tracks.<br>
+    <b>Turn radius</b> = how sharply cars can steer. High = tight turns, low = wide sweeping turns.
   </div>
 
   <div id="draw-ui">
@@ -146,6 +147,6 @@
   </div>
 </div>
 
-<script src="main.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
